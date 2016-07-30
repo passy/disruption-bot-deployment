@@ -1,0 +1,10 @@
+rethink:
+  image: rethinkdb:2.3
+  restart: always
+
+collector:
+  image: passy/disruption-tracker:v0.0.1.0
+  links:
+    - rethink
+  command: [collectd, -i 5]
+  restart: always
