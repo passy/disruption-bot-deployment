@@ -7,7 +7,7 @@ services:
       - "8080:8080"
 
   collector:
-    image: passy/disruption-tracker:v0.0.2.4
+    image: passy/disruption-tracker:v0.0.3.0
     depends_on:
       - rethink
     command: --hostname rethink collectd
