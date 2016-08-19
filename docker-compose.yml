@@ -10,7 +10,7 @@ services:
     image: passy/disruption-tracker:v0.0.4.0
     depends_on:
       - rethink
-    command: --hostname rethink collectd
+    command: --hostname rethink --verbose collectd
     restart: unless-stopped
 
   bot:
