@@ -7,14 +7,14 @@ services:
       - "127.0.0.1:8080:8080"
 
   collector:
-    image: passy/disruption-tracker:v0.0.4.0
+    image: passy/disruption-tracker:v0.0.5.0
     depends_on:
       - rethink
     command: --hostname rethink --verbose collectd
     restart: unless-stopped
 
   bot:
-    image: passy/disruption-fb-bot:v0.0.4
+    image: passy/disruption-fb-bot:v0.0.5
     depends_on:
       - rethink
     command: npm run start
