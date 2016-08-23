@@ -1,10 +1,5 @@
 # disruption-tracker deployment
 
-## TODO
-
-- [ ] Figure out persistence/backup for rethink.
-
-
 ## Setup
 
 One-time setup.
