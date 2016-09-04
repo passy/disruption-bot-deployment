@@ -23,3 +23,9 @@ services:
       - ./config:/app/config
     ports:
       - "127.0.0.1:5000:5000"
+
+  roundel:
+    image: passy/tube-roundel:v0.1.0.2
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8081:8080"
