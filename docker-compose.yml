@@ -14,7 +14,7 @@ services:
     restart: unless-stopped
 
   bot:
-    image: passy/disruption-fb-bot:v0.1.0
+    image: passy/disruption-fb-bot:v0.1.1
     depends_on:
       - rethink
     command: npm run start
