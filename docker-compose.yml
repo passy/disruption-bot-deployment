@@ -14,7 +14,7 @@ services:
     restart: unless-stopped
 
   bot:
-    image: passy/tube-bot:v0.1.7
+    image: passy/tube-bot:v0.1.8
     depends_on:
       - rethink
     command: npm run start
